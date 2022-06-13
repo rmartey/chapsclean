@@ -5,6 +5,9 @@ import React, { useState } from "react";
 //import { MaterialIcons, EvilIcons, FontAwesome5 } from "@expo/vector-icons";
 import CollapsibleItem from "../../components/CollapsibleItem";
 
+//data
+import data from "../../assets/data/data";
+
 import styles from "./styles";
 
 const ServiceScreen = () => {
@@ -16,13 +19,20 @@ const ServiceScreen = () => {
 					showsVerticalScrollIndicator={false}
 					style={{ paddingHorizontal: 20 }}
 				>
-					<CollapsibleItem header={"Popular"} cartState={cartState} />
-					{/* try */}
-					<CollapsibleItem header={"Business Clothes"} cartState={cartState} />
-					<CollapsibleItem header={"Outerwear"} cartState={cartState} />
-					<CollapsibleItem header={"Casual Wear"} cartState={cartState} />
-					<CollapsibleItem header={"Footwear"} cartState={cartState} />
-					{/* try end */}
+					{/*<CollapsibleItem header={data[0].header} cartState={cartState} />
+					<CollapsibleItem header={data[1].header} cartState={cartState} />
+					<CollapsibleItem header={data[2].header} cartState={cartState} />
+					<CollapsibleItem header={data[3].header} cartState={cartState} />
+					<CollapsibleItem header={data[4].header} cartState={cartState} />*/}
+
+					{data.map((d) => (
+						<CollapsibleItem
+							header={d.header}
+							//cartState={cartState}
+							key={d.id}
+							items={d.items}
+						/>
+					))}
 				</ScrollView>
 			</View>
 

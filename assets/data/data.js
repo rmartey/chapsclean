@@ -1,42 +1,63 @@
 const data = [
 	{
-		id: "42",
-		categoryName: "Item 1",
-		subCategory: [
-			{
-				id: "1",
-				name: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                   It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged`,
-			},
-			{ id: "2", name: "Sub Item 2" },
+		id: 1,
+		header: "Popular",
+		items: [
+			{ id: 1, name: "Sneakers", price: 10.0 },
+			{ id: 2, name: "Evening Dress", price: 15.0 },
+			{ id: 3, name: "Shorts", price: 10.0 },
+			{ id: 4, name: "Kids Dress", price: 6.0 },
+			{ id: 5, name: "Skirt", price: 7.0 },
 		],
 	},
 	{
-		id: "95",
-		categoryName: "Item 2",
-		subCategory: [{ id: "1", name: "Sub Item 1" }],
+		id: 2,
+		header: "Business Clothes",
+		items: [
+			{ id: 1, name: "", price: 10.0 },
+			{ id: 2, name: "", price: 10.0 },
+			{ id: 3, name: "", price: 10.0 },
+			{ id: 4, name: "", price: 10.0 },
+			{ id: 5, name: "", price: 10.0 },
+			{ id: 6, name: "", price: 10.0 },
+		],
 	},
 	{
-		id: "94",
-		categoryName: "Item 3",
-		subCategory: [{ id: "1", name: "Sub Item 1" }],
+		id: 3,
+		header: "Outerwear",
+		items: [
+			{ id: 1, name: "Jacket Down", price: 10.0 },
+			{ id: 2, name: "Leather Jacket", price: 10.0 },
+			{ id: 3, name: "Rain coat", price: 13.0 },
+			{ id: 4, name: "", price: 10.0 },
+			{ id: 5, name: "", price: 10.0 },
+			{ id: 6, name: "", price: 10.0 },
+		],
 	},
 	{
-		id: "93",
-		categoryName: "Item 4",
-		subCategory: [{ id: "1", name: "Sub Item 1" }],
+		id: 4,
+		header: "Causal wear",
+		items: [
+			{ id: 1, name: "", price: 10.0 },
+			{ id: 2, name: "", price: 10.0 },
+			{ id: 3, name: "", price: 10.0 },
+			{ id: 4, name: "", price: 10.0 },
+			{ id: 5, name: "", price: 10.0 },
+			{ id: 6, name: "", price: 10.0 },
+		],
 	},
 	{
-		id: "92",
-		categoryName: "Item 5",
-		subCategory: [{ id: "1", name: "Sub Item 1" }],
-	},
-	{
-		id: "96",
-		categoryName: "Item 6",
-		subCategory: [{ id: "1", name: "Sub Item 1" }],
+		id: 5,
+		header: "Footwear",
+		items: [
+			{ id: 1, name: "", price: 10.0 },
+			{ id: 2, name: "", price: 10.0 },
+			{ id: 3, name: "", price: 10.0 },
+			{ id: 4, name: "", price: 10.0 },
+			{ id: 5, name: "", price: 10.0 },
+			{ id: 6, name: "", price: 10.0 },
+		],
 	},
 ];
+
+export default data;

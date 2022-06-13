@@ -8,7 +8,8 @@ import styles from "./styles";
 
 import OrderItem from "../OrderItem";
 
-const CollapsibleItem = ({ header, cartState }) => {
+const CollapsibleItem = ({ header, cartState, items }) => {
+	//console.log(items);
 	const [isCollapsed, setIsCollapsed] = useState(false);
 
 	const setCollapsed = () => {
@@ -36,9 +37,11 @@ const CollapsibleItem = ({ header, cartState }) => {
 			</Pressable>
 
 			<Collapsible collapsed={isCollapsed} style={{ padding: 10 }}>
-				<OrderItem item={"Jacket Down"} price={`GHS ` + 0.0} />
-				<OrderItem item={"Jacket Down"} price={`GHS ` + 0.0} />
-				<OrderItem item={"Jacket Down"} price={`GHS ` + 0.0} />
+				{/*<OrderItem item={"Jacket Down"} price={`GHS ` + 0.0} />
+				<OrderItem item={"Jacket Down"} price={`GHS ` + 0.0} />*/}
+				{items.map((item) => (
+					<OrderItem itemName={item.name} price={item.price} key={item.id} />
+				))}
 			</Collapsible>
 		</View>
 	);
