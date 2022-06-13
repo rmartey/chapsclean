@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
 	ScrollViewContainer: {
 		width: "100%",
 		height: "85%",
+		paddingTop: 20,
 	},
 });
 

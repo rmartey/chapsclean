@@ -1,42 +1,27 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import React, { useState } from "react";
-import Collapsible from "react-native-collapsible";
+//import Collapsible from "react-native-collapsible";
 
-import { MaterialIcons, EvilIcons, FontAwesome5 } from "@expo/vector-icons";
+//import { MaterialIcons, EvilIcons, FontAwesome5 } from "@expo/vector-icons";
 import CollapsibleItem from "../../components/CollapsibleItem";
 
 import styles from "./styles";
 
 const ServiceScreen = () => {
-	const [isCollapsed, setIsCollapsed] = useState(false);
-
-	const setCollapsed = () => {
-		setIsCollapsed(!isCollapsed);
-	};
-
-	const checkBorder = () => {
-		if (isCollapsed) {
-			return {
-				borderBottomLeftRadius: 20,
-				borderBottomRightRadius: 20,
-			};
-		}
-		return {};
-	};
-
+	const cartState = useState();
 	return (
 		<View style={styles.root}>
 			<View style={styles.ScrollViewContainer}>
 				<ScrollView
 					showsVerticalScrollIndicator={false}
-					style={{ padding: 20 }}
+					style={{ paddingHorizontal: 20 }}
 				>
-					<CollapsibleItem header={"Popular"} />
+					<CollapsibleItem header={"Popular"} cartState={cartState} />
 					{/* try */}
-					<CollapsibleItem header={"Business Clothes"} />
-					<CollapsibleItem header={"Outerwear"} />
-					<CollapsibleItem header={"Casual Wear"} />
-					<CollapsibleItem header={"Footwear"} />
+					<CollapsibleItem header={"Business Clothes"} cartState={cartState} />
+					<CollapsibleItem header={"Outerwear"} cartState={cartState} />
+					<CollapsibleItem header={"Casual Wear"} cartState={cartState} />
+					<CollapsibleItem header={"Footwear"} cartState={cartState} />
 					{/* try end */}
 				</ScrollView>
 			</View>

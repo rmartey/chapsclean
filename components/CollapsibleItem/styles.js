@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 	listContainer: {
 		flexDirection: "column",
 		width: "100%",
-		backgroundColor: "yellow",
+		backgroundColor: "white",
 		marginBottom: 10,
 		borderRadius: 20,
 	},
