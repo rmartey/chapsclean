@@ -1,12 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-	root: {
-		flex: 1,
-		//padding: 20,
-		marginTop: 40,
-		backgroundColor: "#d7dcde",
-	},
+	container: {},
 	orderItem: {
 		width: "100%",
 		flexDirection: "row",
@@ -36,30 +31,6 @@ const styles = StyleSheet.create({
 		backgroundColor: "blue",
 		borderTopLeftRadius: 20,
 		borderTopRightRadius: 20,
-	},
-	buttonContainer: {
-		position: "absolute",
-		bottom: 0,
-		width: "100%",
-		height: "15%",
-		padding: 20,
-		backgroundColor: "white",
-		alignItems: "center",
-		justifyContent: "center",
-	},
-	button: {
-		width: "90%",
-		backgroundColor: "#d7dcde",
-		height: "80%",
-		borderRadius: 20,
-		flexDirection: "row",
-		justifyContent: "space-between",
-		alignItems: "center",
-		padding: 20,
-	},
-	ScrollViewContainer: {
-		width: "100%",
-		height: "85%",
 	},
 });
 
