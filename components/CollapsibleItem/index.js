@@ -10,7 +10,7 @@ import OrderItem from "../OrderItem";
 
 const CollapsibleItem = ({ header, cartState, items }) => {
 	//console.log(items);
-	const [isCollapsed, setIsCollapsed] = useState(false);
+	const [isCollapsed, setIsCollapsed] = useState(true);
 
 	const setCollapsed = () => {
 		setIsCollapsed(!isCollapsed);
