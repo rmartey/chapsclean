@@ -10,7 +10,7 @@ import SupportScreen from "./src/SupportScreen";
 export default function App() {
 	return (
 		<SafeAreaView style={styles.container}>
-			<ProfileScreen />
+			<SupportScreen />
 		</SafeAreaView>
 	);
 }
