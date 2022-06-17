@@ -1,5 +1,7 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import React, { useState } from "react";
+
+import { useNavigation } from "@react-navigation/native";
 //import Collapsible from "react-native-collapsible";
 
 //import { MaterialIcons, EvilIcons, FontAwesome5 } from "@expo/vector-icons";
@@ -11,6 +13,7 @@ import data from "../../assets/data/data";
 import styles from "./styles";
 
 const ServiceScreen = () => {
+	const navigation = useNavigation();
 	const cartState = useState();
 	return (
 		<View style={styles.root}>
@@ -37,7 +40,10 @@ const ServiceScreen = () => {
 			</View>
 
 			<View style={styles.buttonContainer}>
-				<TouchableOpacity style={styles.button}>
+				<TouchableOpacity
+					style={styles.button}
+					onPress={() => navigation.navigate("Cart")}
+				>
 					<Text style={{ fontSize: 20 }}>Add Item To Cart</Text>
 					<Text style={{ fontSize: 20 }}>{"GHS 0.00"}</Text>
 				</TouchableOpacity>

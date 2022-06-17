@@ -3,14 +3,13 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
 	root: {
 		padding: 20,
-		marginTop: 40,
 		flex: 1,
 	},
-	exitCart: {
-		flexDirection: "row",
-		width: "100%",
-		justifyContent: "space-between",
-	},
+	//exitCart: {
+	//	flexDirection: "row",
+	//	width: "100%",
+	//	justifyContent: "space-between",
+	//},
 	container: {
 		width: "100%",
 		borderBottomWidth: 1,

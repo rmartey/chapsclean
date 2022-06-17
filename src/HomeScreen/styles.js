@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 	root: {
-		marginTop: 50,
 		padding: 20,
 		flex: 1,
 		backgroundColor: "#ffffff",

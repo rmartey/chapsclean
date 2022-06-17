@@ -3,13 +3,16 @@ import React from "react";
 import styles from "./styles";
 import { MaterialIcons, EvilIcons } from "@expo/vector-icons";
 
+import { useNavigation } from "@react-navigation/native";
+
 const CartScreen = () => {
+	const navigation = useNavigation();
 	return (
 		<View style={styles.root}>
-			<View style={styles.exitCart}>
+			{/*<View style={styles.exitCart}>
 				<MaterialIcons name="clear" size={18} color="black" />
 				<Text style={{ color: "blue", fontSize: 18 }}>clear</Text>
-			</View>
+			</View>*/}
 			<Text style={{ fontSize: 36, marginVertical: 30 }}>
 				2 items in the cart for GHS 80.89
 			</Text>
@@ -104,7 +107,10 @@ const CartScreen = () => {
 					</View>
 				</View>
 			</View>
-			<TouchableOpacity style={styles.button}>
+			<TouchableOpacity
+				style={styles.button}
+				onPress={() => navigation.navigate("Checkout")}
+			>
 				<Text style={{ fontSize: 28, color: "white" }}>Order</Text>
 				<Text style={{ fontSize: 18, color: "white", opacity: 0.7 }}>
 					GHS 80.89

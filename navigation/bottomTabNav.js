@@ -1,14 +1,13 @@
 import React from "react";
 
+import HomeStack from "./homeStack";
 import SupportScreen from "../src/SupportScreen";
 import OrderScreen from "../src/OrdersScreen";
-import HomeScreen from "../src/HomeScreen";
 import ProfileScreen from "../src/ProfileScreen";
 
 import {
 	MaterialIcons,
 	MaterialCommunityIcons,
-	FontAwesome,
 	FontAwesome5,
 } from "@expo/vector-icons";
 
@@ -22,8 +21,8 @@ const BottomTabNav = () => {
 			inactiveColor="#71a4e3"
 		>
 			<Tab.Screen
-				name="Home"
-				component={HomeScreen}
+				name="HomeStack"
+				component={HomeStack}
 				options={{
 					tabBarLabel: "Home",
 					tabBarIcon: ({ color }) => (

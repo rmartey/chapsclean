@@ -8,6 +8,8 @@ import {
 import React from "react";
 import styles from "./styles";
 
+import { useNavigation } from "@react-navigation/native";
+
 import { Entypo } from "@expo/vector-icons";
 
 //images
@@ -15,6 +17,7 @@ import laundaryimage1 from "../../assets/laundary-image1.jpg";
 import cleaningimage from "../../assets/cleaningImage.jpg";
 
 const HomeScreen = () => {
+	const navigation = useNavigation();
 	return (
 		<View style={styles.root}>
 			<View style={styles.locationContainer}>
@@ -23,7 +26,11 @@ const HomeScreen = () => {
 			</View>
 			<Text style={styles.serivicesText}>Services</Text>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<TouchableOpacity>
+				<TouchableOpacity
+					onPress={() => {
+						navigation.navigate("Service");
+					}}
+				>
 					<View style={styles.servicesContainer}>
 						<ImageBackground
 							source={laundaryimage1}

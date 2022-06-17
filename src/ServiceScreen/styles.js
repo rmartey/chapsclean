@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
 	root: {
 		flex: 1,
 		//padding: 20,
-		marginTop: 40,
 		backgroundColor: "#d7dcde",
 	},
 	orderItem: {
@@ -49,7 +48,7 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		width: "90%",
-		backgroundColor: "#d7dcde",
+		backgroundColor: "yellow",
 		height: "80%",
 		borderRadius: 20,
 		flexDirection: "row",

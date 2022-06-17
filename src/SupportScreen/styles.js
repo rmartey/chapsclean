@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		marginLeft: 30,
 		marginRight: 30,
-		backgroundColor: "#9cd7d9",
+		backgroundColor: "#1b7af2",
 		padding: "2%",
 		borderRadius: 10,
 		marginTop: 20,
