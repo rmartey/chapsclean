@@ -7,10 +7,16 @@ import ProfileScreen from "./src/ProfileScreen";
 import ServiceScreen from "./src/ServiceScreen";
 import SupportScreen from "./src/SupportScreen";
 
+import BottomTabNav from "./navigation/bottomTabNav";
+
+import { NavigationContainer } from "@react-navigation/native";
+
 export default function App() {
 	return (
 		<SafeAreaView style={styles.container}>
-			<SupportScreen />
+			<NavigationContainer>
+				<BottomTabNav />
+			</NavigationContainer>
 		</SafeAreaView>
 	);
 }
